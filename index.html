@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="intro">
+    <img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\profile.jpeg" alt="Profile Image" style="width: 140px; border-radius: 50%; margin-bottom: 1rem; box-shadow: 0 0 20px #00f2f0;">
+    <h1 class="glitch-text">Hi, I'm <span>PRABU S</span></h1>
+    <p class="tagline"></p>
+    <div class="intro-buttons">
+      <button onclick="scrollToSection('about')">About Me</button>
+      <button onclick="scrollToSection('education')">Education</button>
+      <button onclick="scrollToSection('projects')">Projects</button>
+      <button onclick="scrollToSection('achievements')">Achievements</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Im a passionate and aspiring <span class="highlight">web developer</span>. As a fresher in the field, I enjoy building responsive websites, learning new frameworks, and solving real-world coding challenges. Welcome to my portfolio!</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul style="list-style-type: none; line-height: 1.8;">
+        <li><b><strong>B.Tech IT</strong></b> -<p> P.S.V College of Engineering and Technology,Krishnagiri</p></li>
+        <li><strong>HSC</strong> -  <p> <p>        Sri Vijay Shanthi Jain Matriculation Higher Secondary School (2021 - 2022)</p></li>
+        <li><strong>SSLC</strong> - <p>         Sri Vijay Shanthi Jain Matriculation Higher Secondary School (2018 - 2019)</p></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>My PORTFOLIO</h3>
+          <p>Portfolio website built using HTML, CSS, and JavaScript animations.</p>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>Landing page design with responsive layout and dark theme UI.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>Foundations of Cybersecurity</h3>
+          <ul>
+  <li>
+    <a href="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\CyberSecurityCertificate.pdf" download>
+    C L I C K  TO  S E E   
+    </a>
+  </li>
+</ul>
+          <p>An online non-credit course authorized by Google and offered through Coursera</p>
+        </div>
+
+        <div class="card">
+          <h3>PARTICIPATION in Learnathon 2024</h3>
+<ul>
+  <li>
+    <a href="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\ICT_ACADEMY_LEARNATHON.pdf" download>
+    C L I C K  TO  S E E   
+    </a>
+  </li>
+</ul>
+          <p>For successfully completing 8 courses in Learnathon 2024 Organized by ICT Academy</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form" action="https://formspree.io/f/xoveyloy" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<!-- Success message box -->
+<div id="form-status" style="margin-top: 15px; color: #00f2f0;"></div>
+    </section>
+  </main>
+
+  <footer style="text-align: center; padding: 40px 0; background: #111; border-top: 1px solid #00f2f0;">
+    <p>Connect with me:</p>
+    <div style="margin-top: 15px;">
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=prabhutpt2004@gmail.com" target="_blank" style="margin: 0 15px;"><img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\gmail-icon.png" alt="Mail" width="30"></a>
+      <a href="https://www.linkedin.com/in/prabu-s-a667012b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="margin: 0 15px;"><img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\linkedin-icon.png" alt="LinkedIn" width="33"></a>
+      <a href="https://github.com/PRABU-S-19" target="_blank" style="margin: 0 15px;"><img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\git-logo.png" alt="Github" width="33"></a>
+      <a href="https://www.instagram.com/im_prabu19/profilecard/?igsh=eXFvZTU3MzlrMHNr" target="_blank" style="margin: 0 15px;"><img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\insta-logo.png" alt="Instagram" width="33"></a>
+      <a href="https://facebook.com/yourprofile" target="_blank" style="margin: 0 15px;"><img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\fb-logo.png" alt="Facebook" width="30"></a>
+      <a href="https://x.com/Im_prabu19?t=unkhP4zsg7nam9UFHM3N5g&s=09" target="_blank" style="margin: 0 15px;"><img src="C:\Users\PRABU\Desktop\PRABU\PORTFOLIO\twit-icon.png" alt="X" width="30"></a>
+    </div>
+  </footer>
+</body>
+</html>

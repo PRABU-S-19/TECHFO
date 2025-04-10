@@ -1,0 +1,178 @@
+/* Reset and base theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #0c0c0d, #1a1a1a);
+  color: #ffffff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 100px 20px 50px;
+  background: radial-gradient(circle at top, #00f2f0 10%, transparent 70%);
+}
+.glitch-text {
+  font-size: 3.2rem;
+  color: #00f2f0;
+  text-shadow: 0 0 10px #00f2f0, 0 0 20px #00f2f0;
+  animation: flicker 1.3s infinite alternate;
+}
+.glitch-text span {
+  color: #ffffff;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #7affff;
+  margin-top: 10px;
+  min-height: 24px;
+}
+
+.intro img {
+  width: 260px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 5px solid #00f2f0;
+  box-shadow:
+    0 0 25px #00f2f0,
+    0 0 45px #00f2f0,
+    0 0 65px #00f2f0;
+  animation: floatUpDown 3.5s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* Buttons */
+.intro-buttons {
+  margin-top: 30px;
+}
+.intro-buttons button {
+  background: transparent;
+  border: 2px solid #00f2f0;
+  color: #00f2f0;
+  padding: 0.6rem 1.2rem;
+  margin: 0 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00f2f0;
+}
+.intro-buttons button:hover {
+  background-color: #00f2f0;
+  color: #000;
+  box-shadow: 0 0 25px #00f2f0;
+}
+
+/* Container & Sections */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 50px 20px;
+}
+section {
+  margin-bottom: 60px;
+  opacity: 1;
+  transition: opacity 1s ease, transform 1s ease;
+}
+h2 {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #00e6e2;
+  display: inline-block;
+}
+
+/* Projects */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #262626;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 250px;
+  box-shadow: 0 0 10px rgba(0, 255, 247, 0.2);
+  transition: transform 0.4s, box-shadow 0.4s;
+  transform: translateY(0);
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #00ffff;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: #3c3c3c;
+  color: #ffffff;
+}
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+button[type="submit"] {
+  background-color: #00e6e2;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #00ffff;
+}
+button[type="submit"]:hover {
+  background-color: #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+  0% { opacity: 1; text-shadow: 0 0 10px #00f2f0; }
+  100% { opacity: 0.85; text-shadow: 0 0 25px #00f2f0; }
+}
+
+/* Animation classes */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* About and Education Styling */
+#about p, #education ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
